@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+}
+
+.name {
+  font-family: 'League Script', cursive;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+  font-size: xx-large;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #FE4F1E;
+  border-bottom: #885D6B 5px solid;
+  position: fixed;
+  background-color: #9AA2BD;
+}
+
+.container--description {
+  border-bottom: #885D6B 5px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 250px;
+  background-color: #9AA2BD;
+}
+
+.abstract {
+  height: auto;
+  width: 75%;
+  border: #885D6B 2px solid;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  background-color: white;
+}
+
+.container--experience {
+  border-bottom: #885D6B 5px solid;
+  height: 600px;
+  background-color: #9AA2BD;
+}
+
+.dadCenterLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.centerLine {
+  background-color: #885D6B;
+  height: 600px;
+  width: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bubbleFirst, .bubbleSecond, .bubbleThird, .bubbleFourth {
+  border-radius: 50%;
+  background-color: #885D6B;
+  height: 50px;
+  width: 50px;
+}
+
+.leftExperience, .rightExperience {
+  border: #885D6B 2px solid;
+  background-color: white;
+  height: auto;
+  width: 30%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+}
+
+.rightExperience {
+  right: -240px;
+  top: 560px;
+}
+
+.leftExperience {
+  left: 3px;
+  top: 500px;
+}
+/*# sourceMappingURL=main.css.map */

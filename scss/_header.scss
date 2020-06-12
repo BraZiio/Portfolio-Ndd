@@ -1,0 +1,65 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myName {
+    font-family: 'Balsamiq Sans', cursive;
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    font-size: xx-large;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    color: $color-white;
+    position: fixed;
+    background-color: $color-blue;
+    z-index: 9;
+}
+.myName:hover {
+    color: $color-white;
+}
+.buttonColor {
+    background-color: $color-blue;
+    padding: 10px;
+    border-radius: 50%;
+    border: $color-white 3px solid;
+    text-decoration: none;
+    position: fixed;
+    z-index: 10;
+    margin-left: 15px;
+    margin-top: 24px;
+}
+
+@media screen and (min-width:1366px) {
+    .header{
+        height: 105px;
+    }
+    .myName {
+        height:100px;
+    }
+    .buttonColor {
+        margin-top: 28px;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .header {
+        height: 115px;
+    }
+    .myName {
+        height: 110px;
+        font-size: 50px;
+        text-decoration: none;
+    }
+    .buttonColor {
+        padding: 20px;
+        margin-top: 30px;
+        border: 4px solid $color-white;
+    }
+}

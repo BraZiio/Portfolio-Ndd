@@ -1,0 +1,19 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "dev": "node-sass scss/main.scss css/style.css",
+      "prod": "node-sass scss/main.scss css/style.css && postcss css/style.css -o css/style.css -u autoprefixer && postcss css/style.css -o css/style.css -u cssnano"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+      "autoprefixer": "^9.7.6",
+      "cssnano": "^4.1.10",
+      "node-sass": "^4.14.1",
+      "postcss": "^7.0.29",
+      "postcss-cli": "^7.1.1"
+    }
+  }

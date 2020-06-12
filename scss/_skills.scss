@@ -1,0 +1,147 @@
+.container--skills {
+    border-bottom: $color-blue 5px solid;
+    height: 150px;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+}
+.decrease {
+    background-color: $color-blue;
+    color: $color-white;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border: none;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.cardSkills {
+    height: auto;
+    width: 100%;
+    display: none;
+    z-index: 1;
+    margin-top: 170px;
+}
+    .html {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .html:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .css {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .css:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .js {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .js:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .scss {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .scss:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .php {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .php:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .python {
+        max-width: auto;
+        max-height: 50px;
+        transition: all 1s ease;        
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .python:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .sql {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+    }
+    .sql:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .linux {
+        max-width: auto;
+        max-height: 50px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .linux:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .bootstrap {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .bootstrap:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .wordpress {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .wordpress:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .react {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .react:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }

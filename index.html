@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Killian Le Breton</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--<script defer src="./js/button.js"></script>-->
+    <script>
+        let flag=0;
+function skills() {
+    console.log("appuie sur bouton !");
+    if(flag==0) { 
+        console.log("1");
+        let cardSkills = document.getElementById("cardSkills");
+        let containerskills = document.getElementById("containerskills");
+        let decrease = document.getElementById("decrease");
+
+        cardSkills.style.display="flex";
+        cardSkills.style.justifyContent="space-evenly";
+        cardSkills.style.flexWrap="wrap";
+        cardSkills.style.alignItems="center";
+/*         cardSkills.style.position="absolute"; */
+
+        containerskills.style.height="auto";
+
+        decrease.value="Fermer les Experiences";
+
+        flag=1;
+    }
+    else {
+        let cardSkills = document.getElementById("cardSkills");
+        let containerskills = document.getElementById("containerskills");
+        let decrease = document.getElementById("decrease");
+
+        cardSkills.style.display="none";
+
+        containerskills.style.height="150px";
+
+        decrease.value="Ouvrir les Experiences";
+
+        flag=0;
+    }
+}
+
+function change() {
+    console.log("bouboub");
+    let color1=Math.floor(Math.random()*256);
+    let color2=Math.floor(Math.random()*256);
+    let color3=Math.floor(Math.random()*256);
+    let myName = document.getElementById("myName");
+    let buttonColors = document.getElementById("buttonColor");
+    let containerDescription = document.getElementById("containerDescription");
+    let containerExperience = document.getElementById("containerExperience");
+    let centerLine = document.getElementById("centerLine");
+    let bubble = document.getElementById("bubble");
+    let bubbleSecond = document.getElementById("bubbleSecond");
+    let bubbleThird = document.getElementById("bubbleThird");
+    let bubbleFourth = document.getElementById("bubbleFourth");
+    let containerskills = document.getElementById("containerskills");
+    let decrease = document.getElementById("decrease");
+    let uploadCv = document.getElementById("uploadCv");
+
+    myName.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    buttonColors.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    containerDescription.style.borderBottomColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    containerExperience.style.borderBottomColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    centerLine.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    bubble.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    bubbleSecond.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    bubbleThird.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    bubbleFourth.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    containerskills.style.borderBottomColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    decrease.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    uploadCv.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+
+}
+
+    </script>
+</head>
+<body>
+    <header>
+        <div >
+            <a href="#"class="myName" id="myName">Killian Le Breton</a>
+            <button class="buttonColor" id="buttonColor" onclick="change()"></button>
+        </div>
+    </header>
+    <section class="container--description" id="containerDescription">
+        <div class="abstract">Je suis actuellement en formation de Développeur Web au sein Pop School.
+                                Cette formation dure 6mois dont 2mois en entreprise, elle me permettera d'obtenir 
+                                le titre Professionel de Développeur Web. Je recherche donc un stage dans ce domaine.
+                                Je suis sérieux, appliqué dans mon travail, motivé et rigoureux </div>
+    </section>
+
+    <!-- Formation -->
+    <section class="container--experience" id="containerExperience">
+        <div class="dadCenterLine">
+            <div class="centerLine" id="centerLine">
+                <div class="bubbleFirst" id="bubble">
+                    <div class="cardExperience--first">
+                        <div class="cardExperience__titleExperience">
+                            2020 Formation Développeur Web
+                        </div>
+                        <div class="cardExperience__littleExperience">
+                            Formation de 6 mois au sein de Pop School
+                        </div>
+                    </div>
+                </div>
+                <div class="bubbleSecond" id="bubbleSecond">
+                    <div class="cardExperience--second">
+                        <div class="cardExperience__titleExperience">
+                            2019-2020 Mission Intérimaire
+                        </div>
+                        <div class="cardExperience__littleExperience">
+                            En usine
+                        </div>
+                    </div>
+                </div>
+                <div class="bubbleThird" id="bubbleThird">
+                    <div class="cardExperience--third">
+                        <div class="cardExperience__titleExperience">
+                            2019 Auto Entrepreneur
+                        </div>
+                        <div class="cardExperience__littleExperience">
+                            Livraison de repas à domicile
+                        </div>
+                    </div>  
+                </div>
+                <div class="bubbleFourth" id="bubbleFourth">
+                    <div class="cardExperience--fourth">
+                        <div class="cardExperience__titleExperience">
+                            2017-2020 Vendeur / Fleuriste 
+                        </div>
+                        <div class="cardExperience__littleExperience">
+                            Durant les fêtes (Toussaint, fêtes des mères, Saint Valentin)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Formation -->
+
+
+    <!-- Compétences -->
+    <section class="container--skills" id="containerskills">
+        <input id="decrease" class="decrease" type="button" value="Ouvrir les Experiences" onclick="skills()">
+        <div id="cardSkills" class="cardSkills">
+            <img class="html" src="pictures/HTML5.png" alt="HTML">
+            <img class="css" src="pictures/CSS3.png" alt="CSS3">
+            <img class="js" src="pictures/JavaScript.png" alt="JavaScript">
+            <img class="scss" src="pictures/SCSS.png" alt="SCSS">
+            <img class="php" src="pictures/PHP.png" alt="PHP">
+            <img class="python" src="pictures/Python.png" alt="Python">
+            <img class="sql" src="pictures/SQL.png" alt="SQL">
+            <img class="linux" src="pictures/Linux.png" alt="Linux">
+            <img class="bootstrap" src="pictures/Bootstrap.png" alt="Bootstrap">
+            <img class="wordpress" src="pictures/Wordpress.png" alt="Wordpress">
+            <img class="react" src="pictures/React.png" alt="ReactJS">
+            <!--<img class="ajax" src="Images/ajax.png" alt="Ajax">
+            <img class="ruby" src="Images/Ruby.png" alt="Ruby">-->
+        </div>
+    </section>
+    <section class="container--carousel">
+        <div></div>
+    </section>
+    <!-- Fin Compétences -->
+
+
+    <!-- carroussel bootstrap -->
+    <div id="carouselExampleIndicators" class="carousel slide m-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <iframe class="d-block w-100" src="pictures/Chuck Norris Facts.mov" alt="First slide"></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe class="d-block w-100" src="pictures/Showtrack.mov" alt="Second slide"></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe class="d-block w-100" src="pictures/Bootstrap.mov" alt="Third slide"></iframe>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+    <!-- fin carrousel -->
+
+
+    <footer>
+        <section class="container--contact">
+            <p class="contactMe">Me contacter :</p>
+            <div class="adress">
+                <p>Adresse mail : le.breton.killian@k-net.fr</p>
+                <p>numéro de téléphone : 06 69 46 26 60</p>
+            </div>
+            <a href="./pictures/cv_LeBreton.pdf" class="uploadCv" download="CVLeBreton"   id="uploadCv">Télécharger le CV</a>
+            <p class="copyright">&copy; Le Breton Killian 2020</p>
+        </section>
+    </footer>
+</body>
+</html>
