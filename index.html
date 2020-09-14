@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,10 +50,18 @@ function skills() {
 }
 
 function change() {
-    console.log("bouboub");
     let color1=Math.floor(Math.random()*256);
     let color2=Math.floor(Math.random()*256);
     let color3=Math.floor(Math.random()*256);
+ /*    let colorPrimary = `rgb(${color1}, ${color2}, ${color3})`;
+
+    let color4=Math.floor(Math.random()*256);
+    let color5=Math.floor(Math.random()*256);
+    let color6=Math.floor(Math.random()*256);
+    let colorSecondary = `rgb(${color4}, ${color5}, ${color6})`;
+
+    let colorGradient = `linear-gradient( {$color-black}, black 200%)`; */
+
     let myName = document.getElementById("myName");
     let buttonColors = document.getElementById("buttonColor");
     let containerDescription = document.getElementById("containerDescription");
@@ -63,8 +71,10 @@ function change() {
     let bubbleSecond = document.getElementById("bubbleSecond");
     let bubbleThird = document.getElementById("bubbleThird");
     let bubbleFourth = document.getElementById("bubbleFourth");
+    let bubbleFifth = document.getElementById("bubbleFifth");
     let containerskills = document.getElementById("containerskills");
     let decrease = document.getElementById("decrease");
+    let borderCarousel = document.getElementById("borderCarousel");
     let uploadCv = document.getElementById("uploadCv");
 
     myName.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
@@ -76,8 +86,10 @@ function change() {
     bubbleSecond.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
     bubbleThird.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
     bubbleFourth.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    bubbleFifth.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
     containerskills.style.borderBottomColor=`rgb(${color1}, ${color2}, ${color3})`; 
     decrease.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
+    borderCarousel.style.borderColor=`rgb(${color1}, ${color2}, ${color3})`;
     uploadCv.style.backgroundColor=`rgb(${color1}, ${color2}, ${color3})`; 
 
 }
@@ -87,15 +99,14 @@ function change() {
 <body>
     <header>
         <div >
-            <a href="#"class="myName" id="myName">Killian Le Breton</a>
+            <a href="#" class="myName" id="myName">Killian Le Breton</a>
             <button class="buttonColor" id="buttonColor" onclick="change()"></button>
         </div>
     </header>
     <section class="container--description" id="containerDescription">
-        <div class="abstract">Je suis actuellement en formation de Développeur Web au sein Pop School.
-                                Cette formation dure 6mois dont 2mois en entreprise, elle me permettera d'obtenir 
-                                le titre Professionel de Développeur Web. Je recherche donc un stage dans ce domaine.
-                                Je suis sérieux, appliqué dans mon travail, motivé et rigoureux </div>
+        <div class="abstract">Suite à ma formation de Développeur Web au sein Pop School pour 
+                              l'obtention du titre professionnel je recherche donc un emploi dans ce domaine.
+                              Je suis sérieux, appliqué dans mon travail, motivé et rigoureux </div>
     </section>
 
     <!-- Formation -->
@@ -105,6 +116,17 @@ function change() {
                 <div class="bubbleFirst" id="bubble">
                     <div class="cardExperience--first">
                         <div class="cardExperience__titleExperience">
+                            Septembre / Novembre 2020 Stage
+                        </div>
+                        <div class="cardExperience__littleExperience">
+                            Formation de 6 mois au sein de Pop School
+                            Stage en ReactJS et Django pendant 2mois
+                        </div>
+                    </div>
+                </div>
+                <div class="bubbleSecond" id="bubbleSecond">
+                    <div class="cardExperience--second">
+                        <div class="cardExperience__titleExperience">
                             2020 Formation Développeur Web
                         </div>
                         <div class="cardExperience__littleExperience">
@@ -112,28 +134,28 @@ function change() {
                         </div>
                     </div>
                 </div>
-                <div class="bubbleSecond" id="bubbleSecond">
-                    <div class="cardExperience--second">
+                <div class="bubbleThird" id="bubbleThird">
+                    <div class="cardExperience--third">
                         <div class="cardExperience__titleExperience">
                             2019-2020 Mission Intérimaire
                         </div>
                         <div class="cardExperience__littleExperience">
                             En usine
                         </div>
-                    </div>
+                    </div>  
                 </div>
-                <div class="bubbleThird" id="bubbleThird">
-                    <div class="cardExperience--third">
+                <div class="bubbleFourth" id="bubbleFourth">
+                    <div class="cardExperience--fourth">
                         <div class="cardExperience__titleExperience">
                             2019 Auto Entrepreneur
                         </div>
                         <div class="cardExperience__littleExperience">
                             Livraison de repas à domicile
                         </div>
-                    </div>  
+                    </div>
                 </div>
-                <div class="bubbleFourth" id="bubbleFourth">
-                    <div class="cardExperience--fourth">
+                <div class="bubbleFifth" id="bubbleFifth">
+                    <div class="cardExperience--fifth">
                         <div class="cardExperience__titleExperience">
                             2017-2020 Vendeur / Fleuriste 
                         </div>
@@ -163,6 +185,11 @@ function change() {
             <img class="bootstrap" src="pictures/Bootstrap.png" alt="Bootstrap">
             <img class="wordpress" src="pictures/Wordpress.png" alt="Wordpress">
             <img class="react" src="pictures/React.png" alt="ReactJS">
+            <img class="angular" src="pictures/angular.png" alt="AngularJS">
+            <img class="vue" src="pictures/vue.png" alt="VueJS">
+            <img class="mongodb" src="pictures/mongodb.png" alt="Mongodb">
+            <img class="express" src="pictures/express.png" alt="ExpressJS">
+            <img class="node" src="pictures/node.png" alt="NodeJS">
             <!--<img class="ajax" src="Images/ajax.png" alt="Ajax">
             <img class="ruby" src="Images/Ruby.png" alt="Ruby">-->
         </div>
@@ -179,16 +206,20 @@ function change() {
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner cardCarousel" id="borderCarousel">
           <div class="carousel-item active">
-            <iframe class="d-block w-100" src="pictures/Chuck Norris Facts.mov" alt="First slide"></iframe>
+            <a href="Chuck-Norris-Facts/index.html"><img src="pictures/Chuck.png" class="sizeCarousel" alt="Chuck Norris Facts"></a>
           </div>
           <div class="carousel-item">
-            <iframe class="d-block w-100" src="pictures/Showtrack.mov" alt="Second slide"></iframe>
+            <a href="bootstrap/index.html"><img src="pictures/bootstrapexo.png" class="sizeCarousel"  alt="Bootstrap"></a>
           </div>
           <div class="carousel-item">
-            <iframe class="d-block w-100" src="pictures/Bootstrap.mov" alt="Third slide"></iframe>
+            <a href="showtrack/index.html"><img src="pictures/showtrack.png" class="sizeCarousel"  alt="Showtrack"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="http://wp-mairie.deloweb.fr/"><img src="pictures/mairie.png" class="sizeCarousel"  alt="Mairie de Hulluch"></a>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -209,7 +240,7 @@ function change() {
         <section class="container--contact">
             <p class="contactMe">Me contacter :</p>
             <div class="adress">
-                <p>Adresse mail : le.breton.killian@k-net.fr</p>
+                <p>Adresse mail : le.breton.killian04@gmail.com</p>
                 <p>numéro de téléphone : 06 69 46 26 60</p>
             </div>
             <a href="./pictures/cv_LeBreton.pdf" class="uploadCv" download="CVLeBreton"   id="uploadCv">Télécharger le CV</a>

@@ -1,0 +1,20 @@
+.sizeCarousel {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardCarousel {
+    border-top: 15px solid $color-blue;
+    border-bottom: 15px solid $color-blue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media screen and (min-width:1000px) {
+    .cardCarousel {
+        border-top: 25px solid $color-blue;
+        border-bottom: 25px solid $color-blue;
+    }
+}

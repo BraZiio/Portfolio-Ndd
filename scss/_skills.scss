@@ -26,7 +26,6 @@
     margin-top: 170px;
 }
     .html {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -37,7 +36,6 @@
         filter: grayscale(0%);
     }
     .css {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -48,7 +46,6 @@
         filter: grayscale(0%);
     }
     .js {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -59,7 +56,6 @@
         filter: grayscale(0%);
     }
     .scss {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -70,7 +66,6 @@
         filter: grayscale(0%);
     }
     .php {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -81,7 +76,6 @@
         filter: grayscale(0%);
     }
     .python {
-        max-width: auto;
         max-height: 50px;
         transition: all 1s ease;        
         filter: grayscale(100%);
@@ -92,7 +86,6 @@
         filter: grayscale(0%);
     }
     .sql {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -102,7 +95,6 @@
         filter: grayscale(0%);
     }
     .linux {
-        max-width: auto;
         max-height: 50px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -113,7 +105,6 @@
         filter: grayscale(0%);
     }
     .bootstrap {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -124,7 +115,6 @@
         filter: grayscale(0%);
     }
     .wordpress {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
@@ -135,13 +125,62 @@
         filter: grayscale(0%);
     }
     .react {
-        max-width: auto;
         max-height: 100px;
         transition: all 1s ease;
         filter: grayscale(100%);
         margin-bottom: 50px;
     }
     .react:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .angular {
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .angular:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .vue {
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .vue:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .mongodb {
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .mongodb:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .express {
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .express:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
+    .node {
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .node:hover {
         transform:scale(1.25);
         filter: grayscale(0%);
     }
